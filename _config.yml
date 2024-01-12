@@ -1,8 +1,8 @@
 # site settings
 
 title: Mikail KOCADAĞ
-description: Hello 
-taglong: Hello 
+description: <p>I'm <span class="typed" data-typed-items="Cyber Security Expert, Founder & Instructor at CyberSkillsHub, Computer Engineering Student, Full-stack Developer"></span></p> 
+taglong: <p>I'm <span class="typed" data-typed-items="Cyber Security Expert, Founder & Instructor at CyberSkillsHub, Computer Engineering Student, Full-stack Developer"></span></p> 
 tagshort: MK
 url: https://MKLKCDG.github.io
 baseurl: ""
