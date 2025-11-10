@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-# About
+# Hakkımda
 
 Siber güvenlik dünyasına adım attığım günden bu yana, geçen iki yılı aşkın sürede edindiğim deneyim ve bilgilerle kendi siber güvenlik yolculuğumu şekillendirdim. Bu süre zarfında en çok ilgimi çeken alan, web güvenliği ve bug bounty programları oldu. Bu alanda kendimi geliştirmek ve güncel kalmak adına PortSwigger Academy, TryHackMe ve HackerOne videolarını büyük bir özveriyle izledim.
 
