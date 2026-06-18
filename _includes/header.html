@@ -1,7 +1,12 @@
 <header>
-  <div>
+  <div class="header-left">
     <a class="site-title" href="/">{{ site.title }}</a>
-    
+    <nav class="site-nav">
+      <a href="/">Ana Sayfa</a>
+      <a href="/cv">CV</a>
+      <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
   </div>
   <a id="theme-toggle" class="toggle-icon" onclick="modeSwitcher()"></a>
 </header>

@@ -5,5 +5,30 @@ title: Home
 
 # Hakkımda
 
-Bartın Üniversitesi Bilgisayar Mühendisliği mezunuyum ve şu anda SwordSec’te Bilgisayar Mühendisi olarak çalışıyorum. 2021’de dahil olduğum Siber Vatan programıyla başlayan siber güvenlik yolculuğumu özellikle web güvenliği ve sızma testleri alanında derinleştiriyorum. PortSwigger Academy, TryHackMe ve HackerOne içerikleriyle kendimi güncel tutarken, çeşitli CTF ve yarışmalara katılarak pratik becerilerimi pekiştiriyorum. Temel ağ, sistem ve donanım bilgilerimi kullanarak web uygulamalarındaki zafiyetleri analiz ediyor, “HackMeIfYouCan” gibi kasıtlı olarak güvensiz web uygulamaları geliştiriyorum. Hackerrank ve LeetCode üzerinde algoritma ve problem çözme çalışmalarıyla analitik düşünme yeteneğimi güçlendiriyor, bunu hem ofansif hem de defansif siber güvenlik çalışmalarına yansıtıyorum. Siber Vatan BootCamp’te eğitmenlik ve mentörlük yaparak bilgi paylaşımına önem veriyor, siber güvenliği bir işten çok sürekli öğrenme ve üretme fırsatı sunan bir tutku olarak görerek daha güvenli bir dijital dünyanın inşasına katkı sunmayı hedefliyorum.
+Yeni teknolojileri yakından takip eden ve siber güvenlik alanındaki gelişmelere odaklanarak sürekli kendini geliştiren bir Bilgisayar Mühendisiyim. Siber güvenliği sadece bir meslek değil, aynı zamanda teknik bir tutku olarak görüyorum. Sektördeki dinamiklere ayak uydurarak özellikle sızma testleri, zafiyet araştırmaları ve defansif güvenlik çözümleri üzerine somut projeler üretmeye ve kendimi bu alanda geliştirmeye devam ediyorum.
 
+## Yetkinlikler
+
+<div class="skills-section">
+  <div class="skills-category">
+    <h3>Sızma Testleri</h3>
+    <div class="skills-tags">
+      <span class="skill-tag">Web Pentest</span>
+      <span class="skill-tag">Network Pentest</span>
+      <span class="skill-tag">Wi-Fi Pentest</span>
+      <span class="skill-tag">Red Teaming</span>
+      <span class="skill-tag">OWASP Top 10</span>
+    </div>
+  </div>
+  <div class="skills-category">
+    <h3>Defansif Güvenlik</h3>
+    <div class="skills-tags">
+      <span class="skill-tag">Honeypot Deployment</span>
+      <span class="skill-tag">DDoS Mitigation</span>
+    </div>
+  </div>
+</div>
+
+## İletişim
+
+{% include contact.html %}

@@ -1,11 +1,40 @@
 a.site-title {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.1em;
   color: var(--color-heading);
+  letter-spacing: -0.01em;
 
   &:focus,
   &:hover {
     border-color: inherit;
-    color: inherit;
+    color: var(--color-accent);
+  }
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+
+  a {
+    font-size: 0.85em;
+    font-weight: 500;
+    color: var(--color-nav);
+    padding: 0.3em 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &:focus,
+    &:hover {
+      color: var(--color-accent);
+      border-bottom-color: var(--color-accent);
+    }
   }
 }
 
@@ -17,11 +46,13 @@ a.site-title {
 
 .toggle-icon {
   color: var(--color-heading);
+  transition: color 0.2s ease;
 
   &:focus,
   &:hover {
     cursor: pointer;
     border: none;
+    color: var(--color-accent);
 
     svg circle,
     svg path {
@@ -47,8 +78,29 @@ dd {
   padding: 0;
 }
 
+.contact {
+  ul li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
 .li-icon {
-  margin-right: 0.25em;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 1.1em;
+    height: 1.1em;
+  }
 }
 
 a.iconlink {

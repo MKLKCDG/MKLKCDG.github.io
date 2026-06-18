@@ -1,7 +1,7 @@
 # site settings
 
 title: Mikail KOCADAĞ
-description: Computer Engineering 
+description: Computer Engineer & Cybersecurity Specialist
 taglong: Computer Engineering 
 tagshort: MK
 url: https://MKLKCDG.github.io
@@ -13,7 +13,6 @@ repo: https://github.com/MKLKCDG/MKLKCDG.github.io
 
 author:
   name: Mikail KOCADAĞ
-  email: mkocadag219@gmail.com
 photo: /assets/jpg/photo.jpg
 
 # social media links

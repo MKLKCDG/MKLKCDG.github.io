@@ -6,6 +6,7 @@ body {
   font-variant-numeric: var(--type-numeric);
   background-color: var(--color-background);
   color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 svg circle,
@@ -16,24 +17,31 @@ svg path {
 
 a {
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-accent);
+  transition: color 0.2s ease, border-color 0.2s ease;
 
   &:focus,
   &:hover {
-    border-bottom: calc(var(--type-size) / 10) dotted var(--color-link);
-    color: var(--color-link);
+    border-bottom: calc(var(--type-size) / 10) dotted var(--color-accent);
+    color: var(--color-accent);
   }
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 1.5em;
   margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--color-border);
 }
 
 footer {
   margin: 2em 0;
+  padding-top: 1em;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
 }
 
 small {
@@ -59,16 +67,53 @@ mark {
 }
 
 hr {
-  border-top: 0.1em solid var(--color-text);
+  border-top: 0.1em solid var(--color-border);
 }
 
 img {
   display: block;
   max-width: 100%;
   margin: 1em 0;
-  border-radius: 0.25em;
+  border-radius: 0.5em;
 }
 
 table.table {
   color: var(--color-text);
+}
+
+main {
+  & > p {
+    margin-bottom: 1.2em;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+
+  &:nth-child(2) { animation-delay: 0.1s; }
+  &:nth-child(3) { animation-delay: 0.2s; }
+  &:nth-child(4) { animation-delay: 0.3s; }
+  &:nth-child(5) { animation-delay: 0.4s; }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
