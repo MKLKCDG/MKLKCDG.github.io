@@ -201,45 +201,42 @@ a {
   margin-bottom: 2rem;
 }
 
-.hexagon-wrapper {
+.avatar-frame {
   position: relative;
-  width: 160px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
-}
-
-.hexagon {
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--accent), #06b6d4, var(--accent));
+  animation: hexRotate 4s linear infinite;
 
   img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     object-fit: cover;
     display: block;
   }
 }
 
-.hexagon-glow {
+.avatar-glow {
   position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: linear-gradient(135deg, var(--accent), #06b6d4, var(--accent));
-  z-index: 1;
-  animation: hexRotate 4s linear infinite;
-  opacity: 0.7;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: var(--accent);
+  filter: blur(20px);
+  opacity: 0.15;
+  z-index: -1;
+  animation: pulseGlow 2s ease-in-out infinite;
 }
 
-@keyframes hexRotate {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(1.05); }
 }
 
 .hero-title {
@@ -738,9 +735,9 @@ a {
     font-size: 0.9rem;
   }
 
-  .hexagon-wrapper {
+  .avatar-frame {
     width: 120px;
-    height: 135px;
+    height: 120px;
   }
 
   .section {
@@ -777,9 +774,9 @@ a {
     font-size: 1.6rem;
   }
 
-  .hexagon-wrapper {
+  .avatar-frame {
     width: 100px;
-    height: 115px;
+    height: 100px;
   }
 
   .social-link {

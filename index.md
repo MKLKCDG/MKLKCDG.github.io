@@ -7,12 +7,10 @@ title: Home
   <div class="container">
     <div class="hero-content">
       <div class="hero-avatar">
-        <div class="hexagon-wrapper">
-          <div class="hexagon">
-            <img src="{{ site.photo | relative_url }}" alt="{{ site.author.name }}">
-          </div>
+        <div class="avatar-frame">
+          <img src="{{ site.photo | relative_url }}" alt="{{ site.author.name }}">
+          <div class="avatar-glow"></div>
         </div>
-        <div class="hexagon-glow"></div>
       </div>
       <h1 class="hero-title">{{ site.title }}</h1>
       <div class="hero-typewriter">
