@@ -8,7 +8,9 @@ title: Home
     <div class="hero-content">
       <div class="hero-avatar">
         <div class="avatar-frame">
-          <img src="{{ site.photo | relative_url }}" alt="{{ site.author.name }}">
+          <div class="avatar-inner">
+            <img src="/assets/jpg/photo.jpg" alt="{{ site.author.name }}">
+          </div>
           <div class="avatar-glow"></div>
         </div>
       </div>

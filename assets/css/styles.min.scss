@@ -207,14 +207,24 @@ a {
   height: 150px;
   margin: 0 auto;
   border-radius: 50%;
-  padding: 4px;
-  background: linear-gradient(135deg, var(--accent), #06b6d4, var(--accent));
+  padding: 3px;
+  background: linear-gradient(135deg, var(--accent), #06b6d4);
   animation: hexRotate 4s linear infinite;
+}
+
+.avatar-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     object-fit: cover;
     display: block;
   }
@@ -232,6 +242,11 @@ a {
   opacity: 0.15;
   z-index: -1;
   animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes hexRotate {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
 }
 
 @keyframes pulseGlow {
