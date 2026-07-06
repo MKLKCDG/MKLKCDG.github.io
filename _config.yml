@@ -1,36 +1,25 @@
-# site settings
-
 title: Mikail KOCADAĞ
-description: Computer Engineer & Cybersecurity Specialist
-taglong: Computer Engineering 
+description: Computer Engineer & Cybersecurity Researcher
+taglong: Computer Engineer
 tagshort: MK
 url: https://MKLKCDG.github.io
 baseurl: ""
 permalink: pretty
 repo: https://github.com/MKLKCDG/MKLKCDG.github.io
 
-# author settings
-
 author:
   name: Mikail KOCADAĞ
-photo: /assets/jpg/photo.jpg
-
-# social media links
+  photo: /assets/jpg/photo.jpg
 
 social:
   github: MKLKCDG
   linkedin: mikailkocadag
-
-# build settings
 
 exclude:
   - LICENSE
   - README.md
 
 plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap
 
@@ -38,7 +27,6 @@ whitelist:
   - jekyll-sitemap
 
 sass:
-  sass_dir: _sass
   style: compressed
   sourcemap: never
 

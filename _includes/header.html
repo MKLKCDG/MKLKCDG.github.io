@@ -1,13 +1,13 @@
-<header>
-  <div class="header-left">
-    <a class="site-title" href="/">{{ site.title }}</a>
-    <nav class="site-nav">
-      <a href="/">Ana Sayfa</a>
-      <a href="/cv">CV</a>
-      <a href="/cve">CVE</a>
-      <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-    </nav>
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo">MK</a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">Hakkımda</a>
+        <a href="#skills" class="nav-link">Yetkinlikler</a>
+        <a href="#cve" class="nav-link">CVE</a>
+      </nav>
+      <a id="theme-toggle" class="theme-toggle" onclick="modeSwitcher()"></a>
+    </div>
   </div>
-  <a id="theme-toggle" class="toggle-icon" onclick="modeSwitcher()"></a>
 </header>
