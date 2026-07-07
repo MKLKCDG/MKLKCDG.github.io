@@ -1,13 +1,22 @@
-<header class="site-header">
+﻿<header class="site-header">
   <div class="container">
     <div class="header-inner">
-      <a href="/" class="logo">MK</a>
-      <nav class="nav-links">
-        <a href="#about" class="nav-link">Hakkımda</a>
-        <a href="#skills" class="nav-link">Yetkinlikler</a>
-        <a href="#cve" class="nav-link">CVE</a>
+      <a href="/" class="logo">
+        <span class="logo-prompt">~$</span>
+        <span class="logo-text">mk</span>
+        <span class="logo-cursor"></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="{% if page.title == 'Home' %}#about{% else %}/#about{% endif %}" class="nav-link">Hakkımda</a>
+        <a href="{% if page.title == 'Home' %}#skills{% else %}/#skills{% endif %}" class="nav-link">Yetkinlikler</a>
+        <a href="{% if page.title == 'Home' %}#cve{% else %}/#cve{% endif %}" class="nav-link">CVE</a>
+        <a href="/cv" class="nav-link{% if page.title == 'CV' %} active{% endif %}">CV</a>
       </nav>
-      <a id="theme-toggle" class="theme-toggle" onclick="modeSwitcher()"></a>
     </div>
   </div>
 </header>
