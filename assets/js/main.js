@@ -68,13 +68,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // === Smooth Nav Scrolling ===
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetEl = document.getElementById(targetId);
-      if (targetEl) {
-        const offset = 80;
-        const targetPos = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top: targetPos, behavior: 'smooth' });
+      const href = this.getAttribute('href');
+      // Only handle anchor links (#something), let external links navigate normally
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          const offset = 80;
+          const targetPos = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: targetPos, behavior: 'smooth' });
+        }
       }
     });
   });
